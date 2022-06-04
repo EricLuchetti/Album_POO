@@ -1,0 +1,213 @@
+* {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+#header {
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+#site-header {
+    height: 40px;
+    background: rgb(121, 0, 0);
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#site-bottom {
+    height: 60px;
+    background: rgb(121, 0, 0);
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#main {
+    background-color: rgb(255, 255, 255);
+}
+
+#body {
+    background-color: rgb(255, 255, 255);
+}
+
+#close {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    right: 2%;
+    top: 1.5%;
+}
+
+#imagemFile {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px 0.5px rgb(255, 255, 255);
+}
+
+#create {
+    text-shadow: 0.2px 0.2px 0.2px rgb(2, 78, 62);
+    border-style: solid;
+    border-color: rgb(2, 78, 62);
+    border-width: 1px;
+}
+
+#deletarAlbum {
+    text-shadow: 0.2px 0.2px 0.2px rgb(51, 1, 1);
+    border-style: solid;
+    border-color: rgb(51, 1, 1);
+    border-width: 1px;
+}
+
+#album {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+
+.modal-img {
+    max-width: 1100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.small-img {
+    height: 250px;
+    width: 400px;
+    cursor: pointer;
+    object-fit: fill;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.foto-legenda:hover {
+    border-color: rgb(170, 170, 170);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: auto;
+    position: relative;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.bottom {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: rgb(250, 250, 250);
+    text-shadow: 2px 2px 2px black;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-left: none;
+    border-right: none;
+    background: rgb(121, 0, 0);
+}
+
+.col-md-12 {
+    padding-top: 12px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.foto-legenda {
+    position: relative;
+}
+
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+@media all and (max-width: 1800px) {
+    #album {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+    .modal-img {
+        max-width: 1100px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    #album {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    }
+    .modal-img {
+        max-width: 1100px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .modal-img {
+        max-width: 750px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .modal-img {
+        max-width: 750px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .modal-img {
+        max-width: 450px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #album {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    }
+    .modal-img {
+        max-width: 450px;
+    }
+}
